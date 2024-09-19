@@ -110,9 +110,25 @@
                         </ul>
                         
                             <p id="simulacion">
-                            <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                                <p id="simulacion">
+                                    <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
+                                    <p><strong>1. Simulación de Control de un servo motor regular</strong></p>
+                                    <p>n esta simulación, se utilizó Tinkercad para replicar el control de un servo motor utilizando el Arduino Uno. Se configuró un circuito con un servo motor conectado a un pin PWM del Arduino, y se programó para mover el servo motor entre 0° y 180°. La simulación permitió verificar el correcto funcionamiento del servo motor en respuesta a las señales PWM enviadas por el Arduino.</p>
+
+                                    <p><strong>2. Simulación de Variaciones en posiciones de servomotores</strong></p>
+                                    <p>En el ejercicio de posiciones predeterminadas, se replicó la simulación de control de un servo motor en varias posiciones. Se programó el Arduino para enviar diferentes señales PWM y se observó cómo el servo motor cambiaba de posición. La simulación en Tinkercad confirmó la capacidad del Arduino para controlar el ángulo de rotación del servo motor en diversas posiciones.</p>
+        
+                                    <p><strong>3. Simulación de Uso de potenciómetros para controlar un servo motor</strong></p>
+                                    <p>En esta simulación, se configuró un circuito en Tinkercad con un servo motor y un potenciómetro. Se programó el Arduino para leer el valor analógico del potenciómetro y ajustar el ángulo de rotación del servo motor en función de ese valor. La simulación permitió verificar la efectividad de la integración del potenciómetro para controlar el servo motor.</p>
+        
+                                    <p><strong>4. Simulación de Control simultáneo de dos servomotores mediante un solo potenciómetro</strong></p>
+                                    <p>En la simulación, se conectaron dos servomotores a diferentes pines PWM del Arduino Uno, y se utilizó un solo potenciómetro para controlar los ángulos de ambos motores. Se programó el Arduino para ajustar los ángulos de los servomotores proporcionalmente al valor del potenciómetro. La simulación en Tinkercad confirmó la capacidad del Arduino para manejar múltiples servomotores utilizando un solo controlador.</p>
+        
+                                    <p><strong>5. Simulación de Uso de dos potenciómetros para controlar de manera independiente dos servomotores</strong></p>
+                                    <p>Se configuró un circuito en Tinkercad con dos servomotores y dos potenciómetros. Se programó el Arduino para leer los valores analógicos de los potenciómetros y ajustar los ángulos de los servomotores individualmente. La simulación permitió verificar la capacidad del Arduino para controlar de manera independiente múltiples servomotores utilizando diferentes sensores de entrada.</p>
+        
+                                    <p><strong>6. Simulación con fuente externa para alimentar los servomotores</strong></p>
+                                    <p>En esta simulación, se incorporó una fuente externa de alimentación en el circuito de Tinkercad. Se conectaron los servomotores a la fuente externa y se verificó su correcto funcionamiento al operar simultáneamente. La simulación en Tinkercad confirmó la mejora en el rendimiento y la estabilidad de los servomotores al utilizar una fuente externa de alimentación.</p>
                             <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                                 <img src="img/1_Servo.png" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
                                 <img src="img/2_Servomotor varias posiciones.png" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
@@ -149,29 +165,32 @@
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">Resultados</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Funcionamiento de los servomotores controlados por Arduino: Se demostró que el Arduino puede controlar con éxito los ángulos de rotación de los servomotores, moviéndolos entre 0° y 180°. Los servomotores respondieron de manera precisa a las señales enviadas por el Arduino, verificando el correcto funcionamiento del controlador.
+
+                            Control de varios servomotores con potenciómetros: Se logró controlar el ángulo de rotación de un servomotor utilizando un potenciómetro, y también se controlaron simultáneamente dos servomotores mediante un solo potenciómetro. Esto demuestra la capacidad de variar los ángulos de los servomotores en función del valor analógico proporcionado por el potenciómetro.</p>
+                        <p class="fs-6 mb-4">Control de dos servomotores independientes: Al conectar dos potenciómetros, se logró controlar de manera independiente dos servomotores, ajustando sus ángulos de rotación individualmente mediante los valores de los potenciómetros. Esto muestra la flexibilidad y la capacidad de control individual de múltiples servomotores utilizando un Arduino.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Práctica 1.mp4" type="video/mp4">
+                            <source src="video/Práctica 3.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Conclusiones</h2>
+                        <p class="fs-6 mb-4">En conclusión, esta práctica proporciona una base sólida para futuros desarrollos en el campo de los sistemas electrónicos y controladores, demostrando la efectividad del enfoque utilizado y la importancia de la programación y el control en la integración de dispositivos como los servomotores en aplicaciones reales.</p>
                         
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        <p class="fs-6 mb-4">Tinkercad. (n.d.). Tinkercad: 3D Design, Electronics & Coding. Autodesk. https://www.tinkercad.com</p>
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 1: <a href="files/1_Servo.pdf">Servo</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 2: <a href="files/2_Servomotor varias posiciones.pdf">Servomotor varias posiciones</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 3: <a href="files/3_Servomotor y potenciometro.pdf">Servomotor y potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 4: <a href="files/4_2 Servomotores y un potenciometro.pdf">2 servomotores y un potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 5: <a href="files/5_2 Servomotores y 2 Potenciometros.pdf">2 servomotores y 2 potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 6: <a href="files/6_Fuente Externa.pdf">fuente externa</a> </p>
+                        <p class="fs-6 mb-4">Descargar carpeta de códigos Arduino: <a href="files/Practica 3/">Códigos Arduino</a> </p>
 
                 </div>
             </section>
