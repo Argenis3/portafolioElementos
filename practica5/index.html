@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 3 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de elementos programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Arduino Basico Servomotores</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Argenis.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Argenis Emanuel Aragón López</div>
+                                <div class="text-muted">Ingeniería en sistemas computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 09 05, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="200px" src="img/images.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Resumen</h2>
+                        <p class="fs-6 mb-4">En esta práctica se trabajó con servomotores controlados mediante un Arduino. Se realizaron seis ejercicios que incluían el control de un servomotor regular, variaciones en posiciones, el uso de potenciómetros para el control de uno o dos servomotores, y finalmente, se experimentó con una fuente de alimentación externa. Los resultados mostraron el correcto funcionamiento y control preciso de los servomotores.</p>
+                        
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Introducción</h2>
+                        <p class="fs-6 mb-4">Los servomotores son dispositivos esenciales para el control de movimiento en diversas aplicaciones. Esta práctica tiene como objetivo aplicar los principios de control de servomotores utilizando un microcontrolador Arduino, para explorar diferentes configuraciones y métodos de control con potenciómetros y fuentes externas. A lo largo de la práctica, se buscó familiarizarse con el comportamiento y respuesta de los servomotores en distintas situaciones.</p>
+                        
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Materiales</h2>
+                        <ul>
+                            <li>1 Arduino Uno</li>
+                            <li>2 Servomotores</li>
+                            <li>2 Potenciómetros</li>
+                            <li>Protoboard</li>
+                            <li>Cables de conexión</li>
+                            <li>Fuente de alimentación externa</li>
+                        </ul>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Desarrollo</h2>
+                        <p class="fs-6 mb-4">La práctica consistió en seis ejercicios de control de servomotores:</p>
+                        <ul>
+                            <li><b>Ejercicio 1:</b> Se conectó un servomotor al pin PWM del Arduino y se programó para moverse entre 0° y 180°.</li>
+                            <li><b>Ejercicio 2:</b> Se realizó el control de un servomotor en varias posiciones predeterminadas, enviando diferentes señales desde el Arduino.</li>
+                            <li><b>Ejercicio 3:</b> Se conectó un potenciómetro para controlar el ángulo de rotación de un servomotor, mapeando el valor analógico del potenciómetro a los ángulos del motor.</li>
+                            <li><b>Ejercicio 4:</b> Dos servomotores fueron controlados simultáneamente mediante un solo potenciómetro. El ángulo de ambos motores fue ajustado de manera proporcional al valor del potenciómetro.</li>
+                            <li><b>Ejercicio 5:</b> En este ejercicio, se conectaron dos potenciómetros para controlar de manera independiente dos servomotores. El valor de cada potenciómetro ajustaba el ángulo de un servomotor específico.</li>
+                            <li><b>Ejercicio 6:</b> Finalmente, se utilizó una fuente externa para alimentar los servomotores, lo que permitió observar una mejora en el rendimiento cuando ambos motores estaban operando simultáneamente.</li>
+                        </ul>
+                        
+                            <p id="simulacion">
+                                <p id="simulacion">
+                                    <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
+                                    <p><strong>1. Simulación de Control de un servo motor regular</strong></p>
+                                    <p>n esta simulación, se utilizó Tinkercad para replicar el control de un servo motor utilizando el Arduino Uno. Se configuró un circuito con un servo motor conectado a un pin PWM del Arduino, y se programó para mover el servo motor entre 0° y 180°. La simulación permitió verificar el correcto funcionamiento del servo motor en respuesta a las señales PWM enviadas por el Arduino.</p>
+
+                                    <p><strong>2. Simulación de Variaciones en posiciones de servomotores</strong></p>
+                                    <p>En el ejercicio de posiciones predeterminadas, se replicó la simulación de control de un servo motor en varias posiciones. Se programó el Arduino para enviar diferentes señales PWM y se observó cómo el servo motor cambiaba de posición. La simulación en Tinkercad confirmó la capacidad del Arduino para controlar el ángulo de rotación del servo motor en diversas posiciones.</p>
+        
+                                    <p><strong>3. Simulación de Uso de potenciómetros para controlar un servo motor</strong></p>
+                                    <p>En esta simulación, se configuró un circuito en Tinkercad con un servo motor y un potenciómetro. Se programó el Arduino para leer el valor analógico del potenciómetro y ajustar el ángulo de rotación del servo motor en función de ese valor. La simulación permitió verificar la efectividad de la integración del potenciómetro para controlar el servo motor.</p>
+        
+                                    <p><strong>4. Simulación de Control simultáneo de dos servomotores mediante un solo potenciómetro</strong></p>
+                                    <p>En la simulación, se conectaron dos servomotores a diferentes pines PWM del Arduino Uno, y se utilizó un solo potenciómetro para controlar los ángulos de ambos motores. Se programó el Arduino para ajustar los ángulos de los servomotores proporcionalmente al valor del potenciómetro. La simulación en Tinkercad confirmó la capacidad del Arduino para manejar múltiples servomotores utilizando un solo controlador.</p>
+        
+                                    <p><strong>5. Simulación de Uso de dos potenciómetros para controlar de manera independiente dos servomotores</strong></p>
+                                    <p>Se configuró un circuito en Tinkercad con dos servomotores y dos potenciómetros. Se programó el Arduino para leer los valores analógicos de los potenciómetros y ajustar los ángulos de los servomotores individualmente. La simulación permitió verificar la capacidad del Arduino para controlar de manera independiente múltiples servomotores utilizando diferentes sensores de entrada.</p>
+        
+                                    <p><strong>6. Simulación con fuente externa para alimentar los servomotores</strong></p>
+                                    <p>En esta simulación, se incorporó una fuente externa de alimentación en el circuito de Tinkercad. Se conectaron los servomotores a la fuente externa y se verificó su correcto funcionamiento al operar simultáneamente. La simulación en Tinkercad confirmó la mejora en el rendimiento y la estabilidad de los servomotores al utilizar una fuente externa de alimentación.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                                <img src="img/1_Servo.png" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                                <img src="img/2_Servomotor varias posiciones.png" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                                <img src="img/3_Servomotor y potenciometro.png" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                                <img src="img/4_2 Servomotores y un potenciometro.png" alt="Simulación 4" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                                <img src="img/5_2 Servomotores y 2 Potenciometros.png " alt="Simulación 5" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                                <img src="img/6_Fuente Externa.png" alt="Simulación 6" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            </div>
+                    
+                            <p id="diseño">
+                            <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h2>
+                            <p class="fs-6 mb-4">El diseño de los circuitos se basó en la conexión de servomotores a los pines de PWM del Arduino Uno. Dependiendo del ejercicio, se añadieron potenciómetros para controlar el ángulo de los servomotores. En el último ejercicio, se implementó una fuente externa para alimentar los servomotores. Los diagramas fueron diseñados y probados previamente en Tinkercad para asegurar su correcto funcionamiento antes de la construcción física.</p>
+                            
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p>Montaje del Circuito en Protoboard</p>
+    <p>El primer paso en la construcción del proyecto fue construir el circuito diseñado en una protoboard. Se siguió el esquema previamente proporcionando, conectando cada componente en su respectivo lugar. Los componentes utilizados incluyen los servomotores, potenciómetros, y el Arduino Uno.</p>
+
+    <p>Conexión de Componentes al Arduino</p>
+    <p>Una vez que todos los componentes fueron colocados en la protoboard, se conectaron a los pines del Arduino utilizando jumpers. Las conexiones incluían:</p>
+    <ul>
+        <li>Potenciómetros conectados a los pines para controlar los ángulos de los servos.</li>
+        <li>Una fuente externa conectada para alimentar los servomotores en el último ejercicio.</li>
+    </ul>
+    <p>Las conexiones se realizaron de acuerdo con el esquema previamente diseñado.</p>
+
+    <p>Verificación del Funcionamiento</p>
+    <p>Tras completar el montaje del circuito, se realizó una verificación preliminar del funcionamiento. Se cargó el código en el Arduino y se observaron los movimientos de los servomotores, verificando que respondían correctamente a las señales enviadas por el microcontrolador, y que el control por potenciómetros funcionaba adecuadamente.</p>
+
+    <p>Ajustes Finales</p>
+    <p>Durante la fase de construcción, se realizaron algunos ajustes para optimizar el funcionamiento del circuito. Se revisaron las conexiones para asegurar la estabilidad de los servomotores, y se reorganizaron los cables en la protoboard para una mejor estética y accesibilidad. También se ajustaron parámetros en el código para afinar el control de los ángulos de los servomotores.</p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Resultados</h2>
+                        <p class="fs-6 mb-4">Funcionamiento de los servomotores controlados por Arduino: Se demostró que el Arduino puede controlar con éxito los ángulos de rotación de los servomotores, moviéndolos entre 0° y 180°. Los servomotores respondieron de manera precisa a las señales enviadas por el Arduino, verificando el correcto funcionamiento del controlador.
+
+                            Control de varios servomotores con potenciómetros: Se logró controlar el ángulo de rotación de un servomotor utilizando un potenciómetro, y también se controlaron simultáneamente dos servomotores mediante un solo potenciómetro. Esto demuestra la capacidad de variar los ángulos de los servomotores en función del valor analógico proporcionado por el potenciómetro.</p>
+                        <p class="fs-6 mb-4">Control de dos servomotores independientes: Al conectar dos potenciómetros, se logró controlar de manera independiente dos servomotores, ajustando sus ángulos de rotación individualmente mediante los valores de los potenciómetros. Esto muestra la flexibilidad y la capacidad de control individual de múltiples servomotores utilizando un Arduino.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/Practica 3.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Conclusiones</h2>
+                        <p class="fs-6 mb-4">En conclusión, esta práctica proporciona una base sólida para futuros desarrollos en el campo de los sistemas electrónicos y controladores, demostrando la efectividad del enfoque utilizado y la importancia de la programación y el control en la integración de dispositivos como los servomotores en aplicaciones reales.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Tinkercad. (n.d.). Tinkercad: 3D Design, Electronics & Coding. Autodesk. https://www.tinkercad.com</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 1: <a href="files/1_Servo.pdf">Servo</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 2: <a href="files/2_Servomotor varias posiciones.pdf">Servomotor varias posiciones</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 3: <a href="files/3_Servomotor y potenciometro.pdf">Servomotor y potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 4: <a href="files/4_2 Servomotores y un potenciometro.pdf">2 servomotores y un potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 5: <a href="files/5_2 Servomotores y 2 Potenciometros.pdf">2 servomotores y 2 potenciometro</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama de conexión 6: <a href="files/6_Fuente Externa.pdf">fuente externa</a> </p>
+                        <p class="fs-6 mb-4">Descargar carpeta de códigos Arduino: <a href="files/Practica 3/">Códigos Arduino</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
