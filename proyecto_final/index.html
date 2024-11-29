@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto Final | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de elementos programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Robot Móvil controlado por Bluetooth</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Argenis.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Argenis Emanuel Aragón López</div>
+                                <div class="text-muted">Ingeniería en sistemas computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 29 11, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="200px" src="img/images.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Resumen</h2>
+                        <p class="fs-6 mb-4">Este proyecto consiste en un robot controlado por Bluetooth utilizando un ATTiny85, un módulo HC-05, un controlador de motores L9110S y una pantalla OLED 128x32 para mostrar ojos animados. El robot puede moverse en diferentes direcciones (adelante, atrás, girar, detenerse) controlado desde un dispositivo móvil. La pantalla OLED muestra ojos animados para darle un aspecto interactivo.</p>
+                        
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Introducción</h2>
+                        <p class="fs-6 mb-4">Este proyecto consiste en la creación de un robot controlado por Bluetooth, ideal para aprender sobre microcontroladores, manejo de motores y pantallas OLED. Usando un ATTiny85 como cerebro principal, el robot puede ser controlado desde un dispositivo móvil a través de un módulo HC-05, que recibe comandos para mover el robot en distintas direcciones. Además, incorpora una pantalla OLED 128x32 que muestra ojos animados, lo que agrega una dimensión visual divertida e interactiva al proyecto. Este robot es una excelente introducción al mundo de la robótica y la programación de microcontroladores.</p>
+                        
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Materiales</h2>
+                        <ul>
+                            <li>1 Modulo Bluetooth HC-05</li>
+                            <li>1 Attiny85</li>
+                            <li>Controlador de motores L9110S</li>
+                            <li>Pantalla OLED 128x320</li>
+                            <li>2 Motores DC</li>
+                            <li>Ruedas para motores DC</li>
+                            <li>Portapilas</li>
+                            <li>2 pilas AA</li>
+                            <li>Placa perforada</li>
+                            <li>Cables Dupont macho-hembra</li>
+                            <li>Estaño y soldadura</li>
+                            <li>Protoboard (opcional para pruebas)</li>
+                            <li>Arduino UNO</li>
+                            <li>Software Arduino IDE con librerías instaladas</li>
+                        </ul>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Desarrollo</h2>
+                        <p class="fs-6 mb-4">A continuación, se detalla el flujo y propósito de los 3 ejercicios realizados, destacando las funcionalidades clave exploradas con el ATtiny85 y el Arduino como programador.</p>
+                        <ul>
+                            <li><b>Conecta el ATTiny85 a un Arduino UNO configurado como programador ISP o usa un programador dedicado.
+                                Selecciona el modelo del ATTiny85, la frecuencia (8 MHz interno) y el programador en el IDE.
+                                Carga el programa que controlará los motores, el módulo Bluetooth y la pantalla OLED.</li>
+                            <li><b>Conecta VCC y GND de la pantalla a la fuente de alimentación y al GND del ATTiny85.
+                                Conecta los pines SCL y SDA de la pantalla a los pines correspondientes en el ATTiny85.
+                                Conecta el pin VCC del HC-05 a la fuente de alimentación (usando un divisor de voltaje si es necesario).
+                                Conecta el pin GND al negativo de la fuente.
+                                Conecta los pines RX y TX del HC-05 a los pines digitales configurados en el código, usando resistencias para evitar problemas de voltaje.</li>
+                            <li><b>Carga el código que controla:
+                                El movimiento de los motores (adelante, atrás, giro).
+                                Las animaciones de los ojos en la pantalla OLED.
+                                La comunicación Bluetooth para recibir comandos desde el celular.</li>
+                            <li><b>Envía comandos desde tu dispositivo móvil (usando una aplicación como Bluetooth Serial Terminal) para verificar que los motores responden correctamente.
+                                Ajusta las conexiones y el código si es necesario.
+                                Verifica la pantalla OLED:
+                                
+                                Asegúrate de que los ojos se muestran correctamente y cambian según el código.
+                                Optimiza la alimentación:
+                                
+                                Revisa que los motores y el ATTiny85 funcionen correctamente con las pilas.
+                                Montaje final:
+                                
+                                Una vez que todo funcione correctamente, monta los componentes en la placa perforada y fija el robot para que sea estable.</li>
+                        </ul>
+                        
+                            <p id="simulacion">
+                            
+                                <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
+                            <ul>
+                                <li><strong>1. Sensor Digital ON/OFF LED:</strong></li> 
+                                <li>En la simulación, al presionar el botón, el LED se encendió inmediatamente. Al soltarlo, el LED se apagó. Esto confirmó la respuesta rápida del ATtiny85 a señales digitales.</li>
+
+                                <li><strong>2. Sensor Analógico ON/OFF LED: </strong></li>
+                                <li>Se ajustó el potenciómetro en la simulación, y cuando el valor superó 512, el LED se encendió. Esta simulación permitió validar el uso de entradas analógicas y la comparación de valores.</li>
+
+                                <li><strong>3. Sensor Analógico Delay LED</strong></li>
+                                <li>Al cambiar el valor del potenciómetro, se observó cómo el LED parpadeaba más rápido o más lento. Esto demostró la capacidad del ATtiny85 para controlar tiempos de ejecución en función de entradas analógicas.</li>
+                            </ul>
+                            </p>
+
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <img src="img/1_Attiny85 Sensor Digital - On_Off LED.png" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/2_Attiny85 Sensor Analogico - On_Off LED.png" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/3_Attiny85 Sensor Analogico - Delay LED.png" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                    
+                            <p id="diseño">
+                            <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h2>
+                            <p class="fs-6 mb-4">El diseño de los circuitos se centró en conectar correctamente sensores y LEDs al ATtiny85. Se utilizaron resistencias pull-down en los sensores digitales y resistencias limitadoras para los LEDs. Además, se preparó el Arduino Uno como programador ISP para cargar el código en el ATtiny85 antes de ejecutar las simulaciones.</p>
+                            
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p>Montaje del Circuito en Protoboard</p>
+                            <p>Se siguió el esquema diseñado, conectando los componentes en la protoboard.
+                                El sensor digital se conectó con una resistencia pull-down para evitar lecturas incorrectas.
+                                Los potenciómetros se conectaron a pines analógicos.</p>
+                        </p>                        
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Resultados</h2>
+                        <p class="fs-6 mb-4">Respuesta Digital: El LED respondió de inmediato a las señales del botón en el primer ejercicio.
+                            Control Analógico: El LED se encendió y apagó correctamente en función del potenciómetro en el segundo ejercicio.
+                            Control de Retardo: El último ejercicio mostró cómo se podía ajustar el tiempo de parpadeo del LED según la lectura del sensor analógico.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/Practica 3.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Conclusiones</h2>
+                        <p class="fs-6 mb-4">Esta práctica demostró la versatilidad del ATtiny85 para manejar tanto entradas digitales como analógicas, aplicando los valores de los sensores para controlar LEDs de manera eficiente. Se logró validar la capacidad del microcontrolador para responder rápidamente a entradas digitales y ajustar salidas en función de lecturas analógicas. Estos ejercicios forman una base sólida para futuros proyectos con sistemas embebidos, demostrando cómo se pueden integrar sensores y actuadores en circuitos simples pero efectivos.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Tinkercad. (n.d.). Tinkercad: 3D Design, Electronics & Coding. Autodesk. https://www.tinkercad.com</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar diagramas de conexión: <a href="files/Diagramas de conexion/">ATtiny85</a> </p>
+                        <p class="fs-6 mb-4">Descargar carpeta de códigos Arduino: <a href="files/Attiny85 Inputs/">Códigos ATtiny85</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
