@@ -72,10 +72,7 @@
 
             <!-- Seccion de CONTENIDO de la Práctica-->
             <section>
-                <div class="container px-5">
-
-                    <figure class="mb-4"><img class="img-fluid rounded" width="200px" src="img/images.jpeg" alt="..." /></figure>
-                                
+                <div class="container px-5">       
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >Resumen</h2>
                         <p class="fs-6 mb-4">Este proyecto consiste en un robot controlado por Bluetooth utilizando un ATTiny85, un módulo HC-05, un controlador de motores L9110S y una pantalla OLED 128x32 para mostrar ojos animados. El robot puede moverse en diferentes direcciones (adelante, atrás, girar, detenerse) controlado desde un dispositivo móvil. La pantalla OLED muestra ojos animados para darle un aspecto interactivo.</p>
@@ -157,11 +154,7 @@
                             </ul>
                             </p>
 
-                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-                            <img src="img/1_Attiny85 Sensor Digital - On_Off LED.png" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-                            <img src="img/2_Attiny85 Sensor Analogico - On_Off LED.png" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-                            <img src="img/3_Attiny85 Sensor Analogico - Delay LED.png" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-                        </div>
+                        
                     
                             <p id="diseño">
                             <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h2>
@@ -172,16 +165,27 @@
                             <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h2>
                             <p>El proceso de construcción comenzó con la preparación de los componentes electrónicos y mecánicos. Los motores y las ruedas se ensamblaron en la base del robot, mientras que los pines necesarios fueron soldados en el ATTiny85, el módulo HC-05 y el controlador L9110S. Posteriormente, se procedió al cableado del sistema, conectando el ATTiny85 al controlador L9110S para enviar las señales de control a los motores. El módulo HC-05 fue conectado al ATTiny85 para permitir la recepción de comandos enviados desde un celular. Asimismo, se integró la pantalla OLED al ATTiny85 mediante comunicación I2C para mostrar las animaciones. 
                                 Luego de completar el cableado, los componentes fueron fijados a una estructura base, asegurando una disposición estable y funcional. Una batería recargable se añadió para alimentar todo el sistema. Finalmente, se cargó el software en el ATTiny85 utilizando un programador ISP, configurando además el módulo HC-05 para que pudiera ser emparejado con un teléfono móvil y recibir comandos.</p>
-                        </p>                        
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <img src="img/conexion Attiny.jpeg" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/HC05.jpeg" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/Oled.jpeg" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/pilas.jpeg" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/L9110S MOTOR.jpeg" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>                    
+
+                                         
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">Resultados</h2>
                         <p class="fs-6 mb-4">El robot construido respondió de manera parcial a los comandos enviados desde un celular a través de la comunicación Bluetooth. Si bien logró realizar movimientos básicos como avanzar, retroceder y detenerse, algunos comandos, como girar a la izquierda o a la derecha, no fueron ejecutados correctamente de manera consistente. Esto se debió a problemas en la programación del ATTiny85 y dificultades en la configuración del módulo Bluetooth HC-05, que afectaron la recepción y procesamiento de los comandos. 
                         Por otro lado, el sistema visual cumplió con su función principal de mostrar animaciones de ojos en la pantalla OLED, aunque las animaciones no fueron completamente fluidas debido a las limitaciones del microcontrolador. A pesar de estos inconvenientes, el controlador L9110S manejó adecuadamente los motores, y la batería permitió que el sistema operara durante periodos aceptables.</p>
-                        <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Practica 3.mp4" type="video/mp4">
-                        </video></p></figure>
-
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                            <img src="img/r1 (1).jpeg" alt="Simulación 1" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/r1 (2).jpeg" alt="Simulación 2" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                            <img src="img/r1 (3).jpeg" alt="Simulación 3" style="width: 200px; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>       
+                            
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">Conclusiones</h2>
                         <p class="fs-6 mb-4">El proyecto logró integrar los sistemas de control de movimiento y visualización de animaciones en un robot compacto, aunque con limitaciones significativas en su funcionamiento. Los problemas de programación en el ATTiny85 y la configuración del HC-05 limitaron la respuesta adecuada del robot a los comandos enviados. Además, las restricciones de memoria y procesamiento del ATTiny85 afectaron tanto la comunicación Bluetooth como el rendimiento visual de las animaciones OLED. 
